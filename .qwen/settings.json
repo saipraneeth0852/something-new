@@ -11,7 +11,8 @@
       "Bash(file *)",
       "Bash(unzip *)",
       "Bash(git commit *)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(python3 *)"
     ]
   },
   "$version": 3
