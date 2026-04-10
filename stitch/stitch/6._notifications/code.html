@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#009542",
+              "error": "#ffb4ab",
+              "inverse-primary": "#006e2f",
+              "on-error-container": "#ffdad6",
+              "on-primary": "#003915",
+              "outline-variant": "#45464d",
+              "secondary-fixed-dim": "#ffb95f",
+              "tertiary": "#7bd0ff",
+              "surface-container-high": "#222a3d",
+              "primary-fixed": "#6bff8f",
+              "on-background": "#dae2fd",
+              "on-secondary-fixed-variant": "#653e00",
+              "surface-tint": "#4ae176",
+              "error-container": "#93000a",
+              "background": "#0b1326",
+              "surface-container": "#171f33",
+              "surface-container-highest": "#2d3449",
+              "outline": "#909097",
+              "primary": "#4ae176",
+              "surface-container-low": "#131b2e",
+              "secondary-fixed": "#ffddb8",
+              "on-surface-variant": "#c6c6cd",
+              "on-secondary-fixed": "#2a1700",
+              "surface-bright": "#31394d",
+              "inverse-on-surface": "#283044",
+              "inverse-surface": "#dae2fd",
+              "tertiary-container": "#001a27",
+              "on-surface": "#dae2fd",
+              "on-tertiary": "#00354a",
+              "on-tertiary-container": "#008abb",
+              "tertiary-fixed-dim": "#7bd0ff",
+              "on-tertiary-fixed-variant": "#004c69",
+              "surface-container-lowest": "#060e20",
+              "on-secondary": "#472a00",
+              "on-secondary-container": "#5b3800",
+              "primary-fixed-dim": "#4ae176",
+              "surface": "#0b1326",
+              "secondary-container": "#ee9800",
+              "surface-variant": "#2d3449",
+              "on-primary-fixed-variant": "#005321",
+              "secondary": "#ffb95f",
+              "surface-dim": "#0b1326",
+              "on-primary-fixed": "#002109",
+              "on-tertiary-fixed": "#001e2c",
+              "primary-container": "#001d07",
+              "tertiary-fixed": "#c4e7ff",
+              "on-error": "#690005"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326] flex items-center justify-between px-8 h-16 w-full shadow-none">
+<div class="flex items-center gap-4">
+<button class="text-[#4ae176] active:scale-95 duration-200 hover:bg-[#222a3d] transition-colors p-2 rounded-xl">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-plus-jakarta text-lg font-bold tracking-tight text-[#dae2fd] tracking-wide">StatusHub India</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-[#dae2fd] active:scale-95 duration-200 hover:bg-[#222a3d] transition-colors p-2 rounded-xl">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-8 max-w-2xl mx-auto space-y-10">
+<!-- Page Headline -->
+<section>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface tracking-tight mb-2">Notifications</h2>
+<p class="text-on-surface-variant body-lg leading-relaxed">Stay updated with your daily blessings and festive greetings.</p>
+</section>
+<!-- Notification Preview Section -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-xl font-bold text-secondary">Live Preview</h3>
+<span class="text-xs font-label uppercase tracking-widest text-outline">System Style</span>
+</div>
+<!-- Glassmorphism Notification Card -->
+<div class="relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+<div class="relative bg-surface-container-highest/60 backdrop-blur-xl rounded-3xl p-6 shadow-2xl flex gap-4 items-start border border-white/5">
+<div class="bg-primary/20 p-3 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="notifications_active" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-sm text-primary tracking-wide">StatusHub India • Now</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-on-surface mb-1">Good Morning! 🙏</h4>
+<p class="text-on-surface-variant leading-relaxed">Your daily status is ready. Tap to share with friends!</p>
+<div class="mt-4 flex gap-3">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm active:scale-95 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+                                Share Now
+                            </button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2.5 rounded-full font-bold text-sm active:scale-95 transition-transform">
+                                View
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Notification Settings Section -->
+<section class="space-y-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Preferences</h3>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden shadow-sm">
+<!-- Setting Item 1: Morning Status -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-5">
+<div class="bg-surface-container-highest p-3 rounded-2xl text-secondary">
+<span class="material-symbols-outlined" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<div>
+<p class="font-bold text-lg text-on-surface">Morning status (7 AM)</p>
+<p class="text-sm text-on-surface-variant">Daily spiritual &amp; positive greetings</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-primary rounded-full relative p-1 flex items-center justify-end">
+<div class="w-6 h-6 bg-on-primary rounded-full shadow-md"></div>
+</div>
+</div>
+<!-- Setting Item 2: Festival Alerts -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-5">
+<div class="bg-surface-container-highest p-3 rounded-2xl text-tertiary">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+</div>
+<div>
+<p class="font-bold text-lg text-on-surface">Festival alerts</p>
+<p class="text-sm text-on-surface-variant">Special wishes for upcoming holidays</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-primary rounded-full relative p-1 flex items-center justify-end">
+<div class="w-6 h-6 bg-on-primary rounded-full shadow-md"></div>
+</div>
+</div>
+<!-- Setting Item 3: New Wallpapers -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-5">
+<div class="bg-surface-container-highest p-3 rounded-2xl text-outline">
+<span class="material-symbols-outlined" data-icon="image">image</span>
+</div>
+<div>
+<p class="font-bold text-lg text-on-surface">New wallpapers</p>
+<p class="text-sm text-on-surface-variant">Get notified when we add HD backgrounds</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-surface-container-highest rounded-full relative p-1 flex items-center justify-start">
+<div class="w-6 h-6 bg-outline rounded-full shadow-md"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Help Section -->
+<section class="bg-surface-container-highest/30 rounded-3xl p-8 text-center border border-surface-container-high">
+<span class="material-symbols-outlined text-secondary text-4xl mb-3 block" data-icon="help_outline">help_outline</span>
+<h4 class="font-headline text-lg font-bold text-on-surface mb-2">Not receiving updates?</h4>
+<p class="text-on-surface-variant text-sm mb-6 max-w-sm mx-auto">Please check if your phone's battery optimization is blocking StatusHub India from sending notifications.</p>
+<button class="text-primary font-bold text-sm underline underline-offset-4 hover:text-primary-fixed transition-colors">Open System Settings</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-6 pt-3 bg-[#2d3449]/60 backdrop-blur-xl z-50 rounded-t-[24px] shadow-[0_-12px_24px_rgba(6,14,32,0.4)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#ffb95f] bg-[#2d3449] rounded-2xl px-4 py-2 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Home</span>
+</a>
+<!-- Wallpapers -->
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="image">image</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Wallpapers</span>
+</a>
+<!-- Quotes -->
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="format_quote">format_quote</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Quotes</span>
+</a>
+<!-- Maker -->
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Maker</span>
+</a>
+</nav>
+</body></html>

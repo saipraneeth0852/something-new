@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Make these errors instead of warnings -->
+    <issue id="MissingPermission" severity="error" />
+    <issue id="Recycle" severity="error" />
+    <issue id="ViewConstructor" severity="error" />
+    <issue id="ViewHolder" severity="error" />
+    <issue id="RegisterDetector" severity="error" />
+
+    <!-- Warnings we want to keep visible -->
+    <issue id="ObsoleteLintCustomCheck" severity="warning" />
+    <issue id="UnusedResources" severity="warning" />
+    <issue id="IconMissingDensityFolder" severity="warning" />
+
+    <!-- Suppress some non-critical warnings -->
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+    <issue id="AllowBackup" severity="ignore" />
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+
+    <!-- Compose-related lint tweaks -->
+    <issue id="ComposableLambdaParameterNaming" severity="warning" />
+    <issue id="ComposableNaming" severity="warning" />
+    <issue id="ModifierParameter" severity="warning" />
+    <issue id="ModifierFactoryReturnType" severity="error" />
+    <issue id="ModifierFactoryExtensionFunction" severity="error" />
+    <issue id="ComposeModifierMissing" severity="warning" />
+    <issue id="ComposeCompositionLocalAllowlist" severity="warning" />
+    <issue id="UnusedPrivateMember" severity="warning" />
+</lint>

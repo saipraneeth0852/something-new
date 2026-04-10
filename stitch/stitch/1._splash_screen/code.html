@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StatusHub India - Splash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#009542",
+              "error": "#ffb4ab",
+              "inverse-primary": "#006e2f",
+              "on-error-container": "#ffdad6",
+              "on-primary": "#003915",
+              "outline-variant": "#45464d",
+              "secondary-fixed-dim": "#ffb95f",
+              "tertiary": "#7bd0ff",
+              "surface-container-high": "#222a3d",
+              "primary-fixed": "#6bff8f",
+              "on-background": "#dae2fd",
+              "on-secondary-fixed-variant": "#653e00",
+              "surface-tint": "#4ae176",
+              "error-container": "#93000a",
+              "background": "#0b1326",
+              "surface-container": "#171f33",
+              "surface-container-highest": "#2d3449",
+              "outline": "#909097",
+              "primary": "#4ae176",
+              "surface-container-low": "#131b2e",
+              "secondary-fixed": "#ffddb8",
+              "on-surface-variant": "#c6c6cd",
+              "on-secondary-fixed": "#2a1700",
+              "surface-bright": "#31394d",
+              "inverse-on-surface": "#283044",
+              "inverse-surface": "#dae2fd",
+              "tertiary-container": "#001a27",
+              "on-surface": "#dae2fd",
+              "on-tertiary": "#00354a",
+              "on-tertiary-container": "#008abb",
+              "tertiary-fixed-dim": "#7bd0ff",
+              "on-tertiary-fixed-variant": "#004c69",
+              "surface-container-lowest": "#060e20",
+              "on-secondary": "#472a00",
+              "on-secondary-container": "#5b3800",
+              "primary-fixed-dim": "#4ae176",
+              "surface": "#0b1326",
+              "secondary-container": "#ee9800",
+              "surface-variant": "#2d3449",
+              "on-primary-fixed-variant": "#005321",
+              "secondary": "#ffb95f",
+              "surface-dim": "#0b1326",
+              "on-primary-fixed": "#002109",
+              "on-tertiary-fixed": "#001e2c",
+              "primary-container": "#001d07",
+              "tertiary-fixed": "#c4e7ff",
+              "on-error": "#690005"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-splash-gradient {
+            background: radial-gradient(circle at center, #131b2e 0%, #0b1326 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body overflow-hidden">
+<!-- Splash Screen Container -->
+<main class="relative h-screen w-screen flex flex-col items-center justify-center bg-splash-gradient">
+<!-- Subtle Ambient Background Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
+<div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-secondary rounded-full blur-[120px]"></div>
+</div>
+<!-- Central Branding Content -->
+<div class="relative flex flex-col items-center z-10">
+<!-- App Logo with High-End Glassmorphism Container -->
+<div class="mb-10 p-8 rounded-[32px] bg-surface-container-highest/30 backdrop-blur-xl shadow-[0_12px_24px_rgba(6,14,32,0.4)]">
+<div class="w-24 h-24 flex items-center justify-center bg-primary rounded-[24px] shadow-[0_0_40px_rgba(74,225,118,0.3)]">
+<span class="material-symbols-outlined text-on-primary text-6xl" style="font-variation-settings: 'FILL' 1;">
+                        hub
+                    </span>
+</div>
+</div>
+<!-- Brand Name: Literal Transcription from JSON Strategy -->
+<h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-3">
+                StatusHub India
+            </h1>
+<!-- Tagline -->
+<p class="font-headline text-lg md:text-xl text-on-surface-variant font-medium tracking-wide opacity-80">
+                Daily Status &amp; Wallpapers
+            </p>
+</div>
+<!-- Progress/Loading Indicator (Visual Aesthetic Only) -->
+<div class="absolute bottom-16 flex flex-col items-center w-full px-16 max-w-xs">
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full w-1/3 bg-primary rounded-full"></div>
+</div>
+<span class="mt-4 font-label text-xs tracking-widest uppercase opacity-40 text-on-surface">
+                Setting your sanctuary
+            </span>
+</div>
+<!-- Footer Visual Detail -->
+<div class="absolute bottom-8 text-[10px] text-on-surface-variant opacity-30 tracking-[0.2em] font-medium uppercase">
+            Premium Content Ecosystem
+        </div>
+</main>
+<!-- Navigation suppression is applied here as this is a focused Splash journey -->
+<!-- The Shared Components (TopAppBar, BottomNavBar) are excluded per "Relevance Check" logic -->
+</body></html>

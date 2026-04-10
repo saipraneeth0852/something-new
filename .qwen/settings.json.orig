@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dotspeeks/Documents/Opensource/new_app/gradle/**)"
+    ]
+  }
+}

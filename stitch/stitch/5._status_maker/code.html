@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StatusHub India - Status Maker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-container": "#009542",
+            "error": "#ffb4ab",
+            "inverse-primary": "#006e2f",
+            "on-error-container": "#ffdad6",
+            "on-primary": "#003915",
+            "outline-variant": "#45464d",
+            "secondary-fixed-dim": "#ffb95f",
+            "tertiary": "#7bd0ff",
+            "surface-container-high": "#222a3d",
+            "primary-fixed": "#6bff8f",
+            "on-background": "#dae2fd",
+            "on-secondary-fixed-variant": "#653e00",
+            "surface-tint": "#4ae176",
+            "error-container": "#93000a",
+            "background": "#0b1326",
+            "surface-container": "#171f33",
+            "surface-container-highest": "#2d3449",
+            "outline": "#909097",
+            "primary": "#4ae176",
+            "surface-container-low": "#131b2e",
+            "secondary-fixed": "#ffddb8",
+            "on-surface-variant": "#c6c6cd",
+            "on-secondary-fixed": "#2a1700",
+            "surface-bright": "#31394d",
+            "inverse-on-surface": "#283044",
+            "inverse-surface": "#dae2fd",
+            "tertiary-container": "#001a27",
+            "on-surface": "#dae2fd",
+            "on-tertiary": "#00354a",
+            "on-tertiary-container": "#008abb",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "on-tertiary-fixed-variant": "#004c69",
+            "surface-container-lowest": "#060e20",
+            "on-secondary": "#472a00",
+            "on-secondary-container": "#5b3800",
+            "primary-fixed-dim": "#4ae176",
+            "surface": "#0b1326",
+            "secondary-container": "#ee9800",
+            "surface-variant": "#2d3449",
+            "on-primary-fixed-variant": "#005321",
+            "secondary": "#ffb95f",
+            "surface-dim": "#0b1326",
+            "on-primary-fixed": "#002109",
+            "on-tertiary-fixed": "#001e2c",
+            "primary-container": "#001d07",
+            "tertiary-fixed": "#c4e7ff",
+            "on-error": "#690005"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .glass-nav {
+      background: rgba(45, 52, 73, 0.6);
+      backdrop-filter: blur(20px);
+    }
+    .status-maker-gradient {
+      background: linear-gradient(135deg, #ffb95f 0%, #5b3800 100%);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326] flex items-center justify-between px-8 h-16 w-full shadow-none">
+<div class="flex items-center gap-4">
+<button class="text-[#4ae176] active:scale-95 duration-200 hover:bg-[#222a3d] transition-colors p-2 rounded-xl">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-plus-jakarta text-xl font-bold text-[#dae2fd] tracking-wide">StatusHub India</h1>
+</div>
+<button class="text-[#4ae176] active:scale-95 duration-200 hover:bg-[#222a3d] transition-colors p-2 rounded-xl">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</header>
+<main class="pt-24 px-8 max-w-5xl mx-auto">
+<!-- Hero Section / Title -->
+<div class="mb-10">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface mb-2">Select a Category</h2>
+<p class="text-on-surface-variant text-lg">Choose a theme to start creating your status</p>
+</div>
+<!-- Category Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- 🙏 Bhakti -->
+<button class="group relative overflow-hidden bg-surface-container-high rounded-[24px] p-8 flex flex-col items-start text-left active:scale-[0.98] transition-all duration-300 hover:bg-surface-container-highest">
+<div class="absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="temple_hindu">temple_hindu</span>
+</div>
+<div class="bg-primary/10 p-4 rounded-2xl mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="temple_hindu" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">🙏 Bhakti</h3>
+<p class="text-on-surface-variant leading-relaxed">Divine quotes, bhajans, and spiritual status for your soul.</p>
+</button>
+<!-- 🌅 Good Morning -->
+<button class="group relative overflow-hidden bg-surface-container-high rounded-[24px] p-8 flex flex-col items-start text-left active:scale-[0.98] transition-all duration-300 hover:bg-surface-container-highest">
+<div class="absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<div class="bg-secondary/10 p-4 rounded-2xl mb-6 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="wb_sunny" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">🌅 Good Morning</h3>
+<p class="text-on-surface-variant leading-relaxed">Start every day with positivity and fresh morning wishes.</p>
+</button>
+<!-- 🎉 Festivals -->
+<button class="group relative overflow-hidden bg-surface-container-high rounded-[24px] p-8 flex flex-col items-start text-left active:scale-[0.98] transition-all duration-300 hover:bg-surface-container-highest">
+<div class="absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="celebration">celebration</span>
+</div>
+<div class="bg-tertiary/10 p-4 rounded-2xl mb-6 text-tertiary">
+<span class="material-symbols-outlined text-4xl" data-icon="celebration" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">🎉 Festivals</h3>
+<p class="text-on-surface-variant leading-relaxed">Celebrate every Indian occasion with festive greetings.</p>
+</button>
+<!-- 💬 General -->
+<button class="group relative overflow-hidden bg-surface-container-high rounded-[24px] p-8 flex flex-col items-start text-left active:scale-[0.98] transition-all duration-300 hover:bg-surface-container-highest">
+<div class="absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="chat">chat</span>
+</div>
+<div class="bg-on-surface-variant/10 p-4 rounded-2xl mb-6 text-on-surface">
+<span class="material-symbols-outlined text-4xl" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">💬 General</h3>
+<p class="text-on-surface-variant leading-relaxed">Daily thoughts, lifestyle quotes, and multipurpose statuses.</p>
+</button>
+</div>
+<!-- Featured Creator Card -->
+<section class="mt-12 mb-8">
+<div class="status-maker-gradient rounded-[32px] p-8 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+<div class="text-white max-w-md">
+<span class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-4">Premium Tool</span>
+<h2 class="font-headline text-3xl font-extrabold mb-4">Create Magic with Our Editor</h2>
+<p class="text-white/80 body-lg mb-6">Mix images, add text in regional languages, and apply beautiful filters with just one tap.</p>
+<button class="bg-white text-secondary-container px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all active:scale-95">
+            Open Advanced Editor
+          </button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden shadow-inner border-4 border-white/10">
+<img alt="Digital art interface" class="w-full h-full object-cover" data-alt="Modern digital art creation interface with vibrant flowing colors and abstract shapes, high-end creative workspace feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBjoMBOsbEsZqWVjb3EPnsKZpKiSIL1V4y_zRBDRTG1Pwd9S8YunXOJ_UYAe1lzOX_nqrZE_jUv3SG-GJkqvE1-w7TiPl9XJqSGZPQmwimrO3Gpxp4VcLIxMg0dYELGwyAa8niyRaEitGBGZ1BOSEmV_AZnWR02irEJPNIr6DifgfwSUm5f6phrVg9hY4OG0YvTMA_Z_zgBx1A3EjGt55oF19sBt-Yyr52be-WHFWLXCH--0Oj6gIL8aqFNsczY1RxO38YrTVePbqa"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-6 pt-3 bg-[#2d3449]/60 backdrop-blur-xl z-50 rounded-t-[24px] shadow-[0_-12px_24px_rgba(6,14,32,0.4)]">
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="image">image</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Wallpapers</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#dae2fd] opacity-70 px-4 py-2 hover:opacity-100 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="format_quote">format_quote</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Quotes</span>
+</a>
+<!-- ACTIVE TAB: Maker -->
+<a class="flex flex-col items-center justify-center text-[#ffb95f] bg-[#2d3449] rounded-2xl px-4 py-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-plus-jakarta text-[12px] font-medium">Maker</span>
+</a>
+</nav>
+</body></html>

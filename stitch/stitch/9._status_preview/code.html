@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StatusHub India - Preview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#ffb95f",
+              "on-surface": "#dae2fd",
+              "tertiary": "#7bd0ff",
+              "surface-dim": "#0b1326",
+              "primary-fixed": "#6bff8f",
+              "background": "#0b1326",
+              "surface-bright": "#31394d",
+              "on-secondary-container": "#5b3800",
+              "primary": "#4ae176",
+              "on-tertiary-fixed": "#001e2c",
+              "tertiary-fixed": "#c4e7ff",
+              "on-primary-fixed": "#002109",
+              "primary-fixed-dim": "#4ae176",
+              "on-tertiary-fixed-variant": "#004c69",
+              "secondary-fixed": "#ffddb8",
+              "surface-tint": "#4ae176",
+              "on-secondary-fixed": "#2a1700",
+              "surface-container-highest": "#2d3449",
+              "surface-container": "#171f33",
+              "primary-container": "#001d07",
+              "on-primary": "#003915",
+              "on-error": "#690005",
+              "tertiary-fixed-dim": "#7bd0ff",
+              "surface-variant": "#2d3449",
+              "on-surface-variant": "#c6c6cd",
+              "error-container": "#93000a",
+              "surface": "#0b1326",
+              "inverse-primary": "#006e2f",
+              "surface-container-low": "#131b2e",
+              "surface-container-high": "#222a3d",
+              "error": "#ffb4ab",
+              "on-tertiary": "#00354a",
+              "outline": "#909097",
+              "on-secondary": "#472a00",
+              "on-primary-fixed-variant": "#005321",
+              "surface-container-lowest": "#060e20",
+              "secondary-fixed-dim": "#ffb95f",
+              "secondary-container": "#ee9800",
+              "inverse-on-surface": "#283044",
+              "on-tertiary-container": "#008abb",
+              "on-primary-container": "#009542",
+              "outline-variant": "#45464d",
+              "tertiary-container": "#001a27",
+              "on-background": "#dae2fd",
+              "on-secondary-fixed-variant": "#653e00",
+              "inverse-surface": "#dae2fd",
+              "on-error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .status-canvas-shadow {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .glass-nav {
+            background: rgba(45, 52, 73, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326] flex items-center justify-between px-6 h-16">
+<div class="flex items-center gap-4">
+<button class="text-[#dae2fd] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] text-lg font-bold tracking-tight text-[#dae2fd]">Your Status is Ready</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#dae2fd] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-8 max-w-2xl mx-auto">
+<!-- Main Preview Canvas -->
+<section class="relative group">
+<div class="bg-surface-container-highest rounded-3xl overflow-hidden status-canvas-shadow border border-white/5 aspect-[9/16] relative">
+<!-- Status Image -->
+<img alt="Generated religious status" class="w-full h-full object-cover" data-alt="a majestic ancient hindu temple silhouette against a vibrant orange and purple sunset with divine light rays and sanskrit calligraphy overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO6KpUke8SkNKjPHAXlbDGYLPRrxyvZYzoyT5Q-TszMW-Q0KgIihTXI-fNnarRsM5idonvHjzUYCwFHj4gQWNUsOhxAK8vtPXl6yBGGuaMSgHVl_A5zqgS2MNaC6yeNqSJXGyGsLGqHOsqnm6rNuq58ksHAaIFCHu6LYyuL5T_sRtCIXgGxCFcxS1QB6Qnu6on_iW2TwoaSTHqtmaNkbYXrjQeF3mnc9g6Q7l0yUqahk1afVx7w6JI-k2HCZ8bc-EdMkFYmeA9o1zv"/>
+<!-- Overlay Content (Simulated) -->
+<div class="absolute inset-0 flex flex-col items-center justify-center p-10 text-center bg-black/30">
+<p class="text-white font-headline text-3xl font-extrabold leading-tight drop-shadow-lg italic">
+                        "जब तक आप खुद पर विश्वास नहीं करते, तब तक आप भगवान पर विश्वास नहीं कर सकते।"
+                    </p>
+<div class="mt-6 w-12 h-1 bg-secondary rounded-full"></div>
+<p class="mt-4 text-white/90 font-medium tracking-widest uppercase text-sm">Swami Vivekananda</p>
+</div>
+<!-- Watermark -->
+<div class="absolute bottom-6 right-6 opacity-40">
+<span class="text-xs font-headline font-bold text-white tracking-widest uppercase">StatusHub India</span>
+</div>
+</div>
+<!-- Floating Quick Actions -->
+<div class="absolute -right-4 top-1/2 -translate-y-1/2 flex flex-col gap-4">
+<button class="w-14 h-14 rounded-2xl bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-xl border border-white/10 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+<button class="w-14 h-14 rounded-2xl bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-xl border border-white/10 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+</button>
+</div>
+</section>
+<!-- Actions Section -->
+<section class="mt-12 space-y-6">
+<!-- Primary Actions -->
+<div class="grid grid-cols-1 gap-4">
+<button class="h-16 rounded-full bg-primary text-on-primary font-headline font-bold text-lg flex items-center justify-center gap-3 shadow-[0_12px_24px_rgba(74,225,118,0.2)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="share" style="font-variation-settings: 'FILL' 1;">share</span>
+                    Share on WhatsApp
+                </button>
+<button class="h-16 rounded-full bg-surface-container-high text-on-surface font-headline font-bold text-lg flex items-center justify-center gap-3 border border-white/5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="download">download</span>
+                    Download Image
+                </button>
+</div>
+<!-- Secondary Actions: Bento Style -->
+<div class="grid grid-cols-2 gap-4">
+<button class="p-6 rounded-3xl bg-surface-container-low flex flex-col items-center justify-center gap-2 group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:rotate-180 transition-transform duration-500">
+<span class="material-symbols-outlined text-3xl" data-icon="refresh">refresh</span>
+</div>
+<span class="text-sm font-semibold text-on-surface-variant">Regenerate</span>
+</button>
+<button class="p-6 rounded-3xl bg-surface-container-low flex flex-col items-center justify-center gap-2 group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<span class="text-sm font-semibold text-on-surface-variant">AI Enhance</span>
+</button>
+</div>
+</section>
+<!-- Promotion / Suggestion -->
+<div class="mt-10 p-6 rounded-3xl bg-gradient-to-br from-secondary/20 to-transparent border border-secondary/10">
+<div class="flex items-start gap-4">
+<div class="bg-secondary p-3 rounded-2xl text-on-secondary">
+<span class="material-symbols-outlined" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-secondary">Bharat Elite Feature</h4>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Remove watermark and unlock 4K Ultra HD exports with the Elite membership.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed as per task - focuses on transaction/result) -->
+<!-- Navigation is focused on the 'Create' journey, so global nav is hidden for focus -->
+<!-- Status Maker Floating Hint (Contextual) -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-md">
+<div class="glass-nav rounded-2xl px-6 py-4 flex items-center justify-between shadow-2xl border border-white/5">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-sm font-medium text-on-surface/80">Ready to post</span>
+</div>
+<div class="flex gap-4">
+<button class="text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+<button class="text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
