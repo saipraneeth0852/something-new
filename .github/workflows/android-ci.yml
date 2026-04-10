@@ -29,11 +29,25 @@ jobs:
           chmod +x gradlew
 
       - name: Build debug
-        run: ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --no-daemon --info 2>&1 | tee build-output.log
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build-output.log
 
       - name: Test
         if: always()
-        run: ./gradlew testDebugUnitTest --no-daemon --continue
+        run: ./gradlew testDebugUnitTest --no-daemon --continue 2>&1 | tee test-output.log
+
+      - name: Upload test log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-log
+          path: test-output.log
 
       - uses: actions/upload-artifact@v4
         if: always()
