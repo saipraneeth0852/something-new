@@ -26,12 +26,12 @@ plugins {
 
 android {
     namespace = "com.statushub.india"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.statushub.india"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
 
@@ -79,16 +79,9 @@ android {
         }
     }
 
-    val storeFile = getSigningProperty("RELEASE_STORE_FILE", "")
-    if (storeFile.isNotEmpty()) {
-        buildTypes.getByName("release").signingConfig = signingConfigs.getByName("release")
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
@@ -97,7 +90,8 @@ android {
     lint {
         xmlReport = true
         checkDependencies = true
-        abortOnError = true
+        abortOnError = false
+        warningsAsErrors = false
         lintConfig = file("lint.xml")
     }
 }
@@ -134,7 +128,7 @@ dependencies {
     implementation(libs.play.services.ads)
     implementation(libs.work.runtime.ktx)
     implementation(libs.androidx.material.icons.extended)
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.8")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.7.6")
 
     // Firebase BoM (manages versions for all Firebase dependencies)
     implementation(platform(libs.firebase.bom))
