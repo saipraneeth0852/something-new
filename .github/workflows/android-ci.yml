@@ -110,7 +110,7 @@ jobs:
   release:
     name: Build Release APK
     needs: build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.RELEASE_KEYSTORE_BASE64 != ''
     runs-on: ubuntu-latest
 
     steps:

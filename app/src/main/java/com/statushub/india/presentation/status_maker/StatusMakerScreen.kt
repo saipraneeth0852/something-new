@@ -94,7 +94,7 @@ fun StatusMakerScreen(
                             onShare = {
                                 coroutineScope.launch {
                                     val bitmap = graphicsLayer.toImageBitmap().asAndroidBitmap()
-                                    com.example.new_app.util.ShareUtils.shareImage(context, bitmap, "Share Status")
+                                    com.statushub.india.util.ShareUtils.shareImage(context, bitmap, "Share Status")
                                 }
                             }
                         )

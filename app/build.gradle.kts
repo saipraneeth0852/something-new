@@ -26,9 +26,7 @@ plugins {
 
 android {
     namespace = "com.statushub.india"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.statushub.india"
@@ -42,6 +40,18 @@ android {
         manifestPlaceholders["adMobAppId"] = getLocalProperty("ADMOB_APP_ID", "")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        create("release") {
+            val storeFile = getSigningProperty("RELEASE_STORE_FILE", "")
+            if (storeFile.isNotEmpty()) {
+                this.storeFile = file(storeFile)
+                this.storePassword = getSigningProperty("RELEASE_STORE_PASSWORD", "")
+                this.keyAlias = getSigningProperty("RELEASE_KEY_ALIAS", "")
+                this.keyPassword = getSigningProperty("RELEASE_KEY_PASSWORD", "")
+            }
+        }
     }
 
     buildTypes {
@@ -62,20 +72,16 @@ android {
             buildConfigField("String", "ADMOB_APP_ID", "\"${getLocalProperty("ADMOB_APP_ID", "")}\"")
             buildConfigField("String", "BANNER_AD_UNIT_ID", "\"${getLocalProperty("BANNER_AD_UNIT_ID", "")}\"")
             buildConfigField("String", "INTERSTITIAL_AD_UNIT_ID", "\"${getLocalProperty("INTERSTITIAL_AD_UNIT_ID", "")}\"")
-            signingConfig = signingConfigs.maybeCreate("release").apply {
-                val storeFile = getSigningProperty("RELEASE_STORE_FILE", "")
-                if (storeFile.isNotEmpty()) {
-                    this.storeFile = file(storeFile)
-                    this.storePassword = getSigningProperty("RELEASE_STORE_PASSWORD", "")
-                    this.keyAlias = getSigningProperty("RELEASE_KEY_ALIAS", "")
-                    this.keyPassword = getSigningProperty("RELEASE_KEY_PASSWORD", "")
-                }
-            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+    }
+
+    val storeFile = getSigningProperty("RELEASE_STORE_FILE", "")
+    if (storeFile.isNotEmpty()) {
+        buildTypes.getByName("release").signingConfig = signingConfigs.getByName("release")
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
